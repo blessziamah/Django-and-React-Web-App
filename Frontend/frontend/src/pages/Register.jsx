@@ -1,10 +1,10 @@
 import React from 'react';
+import Form from "../components/Form.jsx";
 
 const Register = () => {
     return (
-        <div>
-            Register
-        </div>
+        <Form method={"register"} route={"/api/user/register/"} />
+
     );
 };
 
