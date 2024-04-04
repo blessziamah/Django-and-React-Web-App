@@ -3,6 +3,7 @@ import api from "../api";
 import {useNavigate} from "react-router-dom";
 import {ACCESS_TOKEN, REFRESH_TOKEN} from "../constants";
 import "../styles/Form.css"
+import LoadingIndicator from "./LoadingIndicator.jsx";
 
 // import LoadingIndicator from "./LoadingIndicator";
 
@@ -43,7 +44,7 @@ function Form({route, method}) {
                    placeholder="Username"/>
             <input className="form-input" type="password" value={password} onChange={(e) => setPassword(e.target.value)}
                    placeholder="Password"/>
-            {/*{loading && <LoadingIndicator />}*/}
+            {loading && <LoadingIndicator />}
             <button className="form-button" type="submit">
                 {name}
             </button>
